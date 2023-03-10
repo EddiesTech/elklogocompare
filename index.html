@@ -1,2 +1,31 @@
 <img src="https://raw.githubusercontent.com/EddiesTech/elklogocompare/main/elklogo.svg">
 <img src="https://raw.githubusercontent.com/EddiesTech/elklogocompare/main/elklogo2.svg">
+
+<style>
+  img {
+    border-style: solid;
+    border-width: medium;
+    border-color: red;
+  }
+</style>
+<br>
+<br>
+<select onchange="changed()">
+<option>Orginal</option>
+<option>Edit</option>
+</select>
+<br>
+<br>
+<img id="image" src="https://raw.githubusercontent.com/EddiesTech/elklogocompare/main/elklogo.svg">
+
+<script>
+  function changed(){
+  if(document.getElementById("image").src == "https://raw.githubusercontent.com/EddiesTech/elklogocompare/main/elklogo.svg"){
+    document.getElementById("image").src == "https://raw.githubusercontent.com/EddiesTech/elklogocompare/main/elklogo2.svg"
+  }else{
+  document.getElementById("image").src == "https://raw.githubusercontent.com/EddiesTech/elklogocompare/main/elklogo.svg"
+  }
+    
+  }
+  
+</script>
